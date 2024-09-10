@@ -17,7 +17,7 @@ public class Main {
         ProfesorTitular profeMatematicas = new ProfesorTitular("Lucia", "Bernal", 32, "11265498",
                 "Matematicas", "Contrato fijo", 40, 5);
         profeMatematicas.increaseSalary(10);
-        System.out.println("\n\nProfesores: " + profeMatematicas.work());
+        System.out.println("\n\nProfesores:" + profeMatematicas.work());
         System.out.printf("\nProfesor Titular:\nNombre: %s\nEnseña %s \n%s", profeMatematicas.getFullName(), profeMatematicas.getSubject(), profeMatematicas.extraBonus());
         //Profesor Interino
         System.out.println("\nProfesor Interino:");
