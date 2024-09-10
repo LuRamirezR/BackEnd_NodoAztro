@@ -1,6 +1,6 @@
 import model.*;
 
-import java.util.Scanner; //para leer la entrada del usuario
+import java.util.Scanner; //para leer la entrada del usuario (puede ser por consola)
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +19,7 @@ public class Main {
             // variable calc tipo abstracto Calculadora, para polimorfirmos
             Calculadora calc = null;
 
+            //Evaluar la opcion seleccionada por el usuario en consola
             switch (option){
                 case 1:
                     calc = new SumaCalc(); //se asigna a calc una instancia de una de las subclases de Calculadora
