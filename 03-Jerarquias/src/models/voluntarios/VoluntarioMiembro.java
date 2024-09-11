@@ -15,7 +15,7 @@ public class VoluntarioMiembro extends Voluntario {
         this.institution = institution;
     }
 
-    //Get y setter
+    //Getter y setter
     public String getProject() {
         return project;
     }
