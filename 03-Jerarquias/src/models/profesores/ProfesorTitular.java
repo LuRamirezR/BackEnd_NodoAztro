@@ -4,7 +4,7 @@ import models.Profesor;
 
 public class ProfesorTitular extends Profesor {
 
-    //Atributo
+    //Atributos
     public int workHours;
     public int extraHours;
 
