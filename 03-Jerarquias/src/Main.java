@@ -1,6 +1,7 @@
 import models.PersonalAdmin;
 import models.profesores.ProfesorInterino;
 import models.profesores.ProfesorTitular;
+import models.voluntarios.VoluntarioExterno;
 import models.voluntarios.VoluntarioMiembro;
 
 public class Main {
@@ -38,6 +39,7 @@ public class Main {
         System.out.printf("\nVoluntario Miembro:\nNombre: %s y es Lider en el %s", voluntarioLider.getFullName(), voluntarioLider.getProject());
 
         //Voluntario Externo
-
+        VoluntarioExterno voluntarioOcasional = new VoluntarioExterno("Pablo", "Gallego", 21, "1234569", "EAFIT");
+        System.out.printf("\nVoluntario Externo:\nNombre: %s y pertenece a %s como voluntario externo", voluntarioOcasional.getFullName(), voluntarioOcasional.getExternalOrganization());
     }
 }
