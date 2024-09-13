@@ -8,7 +8,7 @@ public abstract class Voluntario extends Persona {
 
     //Sobreescribe el metodo protegido del padre (Persona)
     @Override
-    protected void calcularBono() {
+    protected void calcularBonoNavideno() {
         // Un bono fijo o según alguna otra variable de voluntariado.
         System.out.println("El voluntario no recibe bono monetario, pero recibe beneficios.");
     }

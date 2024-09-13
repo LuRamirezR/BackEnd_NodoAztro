@@ -54,5 +54,5 @@ public abstract class Persona {
         return this.name + " " + this.lastName;
     }
     //Metodo protegido
-    protected abstract void calcularBono();
+    protected abstract void calcularBonoNavideno();
 }

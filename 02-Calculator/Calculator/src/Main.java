@@ -39,7 +39,6 @@ public class Main {
                     break;
                 default:
                     System.out.println("Debe seleccionar una opción válida");
-
             }
 
             // captura los numeros ingresados en consola

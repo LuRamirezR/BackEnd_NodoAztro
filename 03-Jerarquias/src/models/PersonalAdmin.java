@@ -11,9 +11,9 @@ public class PersonalAdmin extends Asalariado {
 
     //Sobreescribe constructor del padre (Asalariado)
     //Y adiciono los atributos en los parametros
-    public PersonalAdmin(String name, String lastName, int age, String idCard,
+    public PersonalAdmin(String name, String lastName, int age, String idCard, Long salario,
                          String cargo, String dependencia, String horario) {
-        super(name, lastName, age, idCard);
+        super(name, lastName, age, idCard, salario);
         this.cargo = cargo;
         this.dependencia = dependencia;
         this.horario = horario;

@@ -8,9 +8,9 @@ public class ProfesorInterino extends Profesor {
     public String whoReplace;
 
     //Sobreescribe constructor del padre (Profesor)
-    public ProfesorInterino(String name, String lastName, int age, String idCard, String subject,
+    public ProfesorInterino(String name, String lastName, int age, String idCard, Long salario, String subject,
                             String contractType, String whoReplace) {
-        super(name, lastName, age, idCard, subject, contractType);
+        super(name, lastName, age, idCard, salario, subject, contractType);
         this.whoReplace = whoReplace;
     }
 }
