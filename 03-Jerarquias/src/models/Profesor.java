@@ -9,8 +9,8 @@ public class Profesor extends Asalariado {
     private String contractType;
 
     //Sobreescribe constructor del padre (Asalariado)
-    public Profesor(String name, String lastName, int age, String idCard, Long salario, String subject, String contractType) {
-        super(name, lastName, age, idCard, salario);
+    public Profesor(String name, String lastName, int age, String idCard, Long salario, int porcentajeIncremento, String subject, String contractType) {
+        super(name, lastName, age, idCard, salario, porcentajeIncremento);
         this.subject = subject;
         this.contractType = contractType;
     }

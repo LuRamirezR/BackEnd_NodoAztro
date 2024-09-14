@@ -6,12 +6,14 @@ public abstract class Asalariado extends Persona {
     //private Long SMLV = 1300000L;
     private Long salario;
     private Long bonoNavideno;
+    private int porcentajeIncremento;
 
     //Sobreescribe el constructor del padre (Persona)
-    public Asalariado(String name, String lastName, int age, String idCard, Long salario) {
+    public Asalariado(String name, String lastName, int age, String idCard, Long salario, int porcentajeIncremento) {
         super(name, lastName, age, idCard);
         this.salario = salario;
         this.bonoNavideno = 0L;
+        this.porcentajeIncremento = porcentajeIncremento;
         this.calcularBonoNavideno();
     }
 
@@ -19,7 +21,7 @@ public abstract class Asalariado extends Persona {
     @Override
     protected void calcularBonoNavideno() {
         // Supongamos que el bono es el 10% del salario.
-        this.bonoNavideno = this.salario * 10 / 100;
+        this.bonoNavideno = this.salario * this.porcentajeIncremento / 100;
         //System.out.println("\nEl bono del asalariado es: $" + bono);
     }
 

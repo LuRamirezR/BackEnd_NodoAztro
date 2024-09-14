@@ -9,8 +9,8 @@ public class Main {
 
         //Asalariados
         //Personal administrativo
-        PersonalAdmin jefeContable = new PersonalAdmin("John", "Hernandez", 29, "70536861", 1300000L,
-                "Jefe de Contaduria", "Contaduria",
+        PersonalAdmin jefeContable = new PersonalAdmin("John", "Hernandez", 29, "70536861",
+                1700000L, 10,"Jefe de Contaduria", "Contaduria",
                 "Horario:7AM --> 5PM");
         jefeContable.increaseSalary(2);
         System.out.printf("Personal administrativo:\nNombre: %s \nSalario: $%s y su bono navideño es: $%s",
@@ -20,7 +20,7 @@ public class Main {
         //Profesores
         //Profesor Titular
         ProfesorTitular profeMatematicas = new ProfesorTitular("Lucia", "Bernal", 32, "11265498", 1600000L,
-                "Matematicas", "Contrato indefinido", 40, 5);
+                10 , "Matematicas", "Contrato indefinido", 40, 5);
         profeMatematicas.increaseSalary(10);
         System.out.println("\n\nProfesores: " + profeMatematicas.work());
         System.out.printf("\nProfesor Titular:\nNombre: %s\nEnseña %s \n%s",
@@ -28,7 +28,7 @@ public class Main {
 
         //Profesor Interino
         ProfesorInterino profeReemplazo = new ProfesorInterino("Carlos", "Molina", 29, "1237854", 1900000L,
-                "Inglés", "Contrato por horas", "En incapacidad por gripa");
+                5, "Inglés", "Contrato por horas", "En incapacidad por gripa");
         System.out.printf("\nProfesor Interino:\nNombre: %s, edad %s años", profeReemplazo.getFullName(), profeReemplazo.getAge());
         System.out.printf("\nEsta reemplazando a un profesor(a) %s", profeReemplazo.whoReplace);
 

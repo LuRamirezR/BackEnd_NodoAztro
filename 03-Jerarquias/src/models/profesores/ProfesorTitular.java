@@ -9,9 +9,9 @@ public class ProfesorTitular extends Profesor {
     public int extraHours;
 
     //Sobreescribe constructor del padre (Profesor)
-    public ProfesorTitular(String name, String lastName, int age, String idCard, Long salario, String subject,
+    public ProfesorTitular(String name, String lastName, int age, String idCard, Long salario, int porcentajeIncremento, String subject,
                            String contractType, int workHours, int extraHours) {
-        super(name, lastName, age, idCard, salario, subject, contractType);
+        super(name, lastName, age, idCard, salario, porcentajeIncremento, subject, contractType);
         this.workHours = workHours;
         this.extraHours = extraHours;
     }
