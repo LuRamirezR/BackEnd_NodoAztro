@@ -12,11 +12,11 @@
             <property name="jakarta.persistence.jdbc.driver"
                       value="org.postgresql.Driver"/>
             <property name="jakarta.persistence.jdbc.url"
-                      value="jdbc:postgresql://localhost:5434/ejercicios_nodo"/>
+                      value="${jakarta.persistence.jdbc.url}"/>
             <property name="jakarta.persistence.jdbc.user"
-                      value="postgres"/>
+                      value="${jakarta.persistence.jdbc.user}"/>
             <property name="jakarta.persistence.jdbc.password"
-                      value="admin"/>
+                      value="${jakarta.persistence.jdbc.password}"/>
             <property name="hibernate.dialect"
                       value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="create"/>

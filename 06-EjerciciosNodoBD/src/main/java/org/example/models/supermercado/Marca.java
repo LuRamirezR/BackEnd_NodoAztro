@@ -22,4 +22,5 @@ public class Marca {
 
     @OneToMany(mappedBy = "marca", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Producto> productos;
+
 }

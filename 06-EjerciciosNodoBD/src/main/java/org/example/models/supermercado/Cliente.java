@@ -23,13 +23,7 @@ public class Cliente {
     @Column(nullable = false)
     private String apellido;
 
-    @Column(nullable = false)
-    private String email;
-
-    @Column(nullable = false)
-    private String telefono;
-
     @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Compras> compras;
-
 }
+

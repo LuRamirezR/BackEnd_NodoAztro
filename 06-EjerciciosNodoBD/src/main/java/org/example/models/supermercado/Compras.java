@@ -13,6 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Compras {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -26,9 +27,10 @@ public class Compras {
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
-            name = "compras_productos",
+            name = "compra_producto",
             joinColumns = @JoinColumn(name = "compra_id"),
             inverseJoinColumns = @JoinColumn(name = "producto_id")
     )
+
     private List<Producto> productos;
 }
