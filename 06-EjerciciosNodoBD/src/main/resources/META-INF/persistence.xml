@@ -3,10 +3,10 @@
     <persistence-unit name="myPU">
         <!-- Entity classes to be used by JPA -->
         <!-- Supermercado -->
-        <class>com.example.06-EjerciciosNodoBD.models.supermercado.Producto</class>
-        <class>com.example.06-EjerciciosNodoBD.models.supermercado.Cliente</class>
-        <class>com.example.06-EjerciciosNodoBD.models.supermercado.Marca</class>
-        <class>com.example.06-EjerciciosNodoBD.models.supermercado.Compras</class>
+        <class>org.example.models.supermercado.Cliente</class>
+        <class>org.example.models.supermercado.Compras</class>
+        <class>org.example.models.supermercado.Marca</class>
+        <class>org.example.models.supermercado.Producto</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver"

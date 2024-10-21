@@ -15,3 +15,6 @@ Implementación de una calculadora aplicando excepciones para el manejo de error
 
 ## Colecciones
 Ejercicios para practica de colecciones en Java.
+
+## Conexion de Base de Datos PostgreSQL
+Creacion de tablas y agregar datos a una base de datos PostgreSQL, de un sistema que almacena información de un supermercado.
